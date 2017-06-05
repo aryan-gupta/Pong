@@ -17,4 +17,16 @@
 
 #pragma once
 
+struct Coordinate {
+	unsigned x;
+	unsigned y;
+};
+
+enum Direction {
+	NORTH_DIR,
+	EAST_DIR,
+	SOUTH_DIR,
+	WEST_DIR
+};
+
 int main(int argc, char* argv[]);
