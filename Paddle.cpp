@@ -8,13 +8,33 @@
 ***=============================================================================
 ***    @author          Aryan Gupta
 ***    @project         
-***    @title           main
+***    @title           Paddle
 ***    @date            (YYYY-MM-DD)
 ***    @version         
-***    @brief           Contains program entry point and misc. functions
+***    @brief           Contains code for the Paddle Base Class
 ***=============================================================================
 **/
 
 #include "info.h"
 
 #include "main.h"
+#include "Paddle.h"
+
+Paddle::Paddle(unsigned x)
+: mCord({x, MAP_H / 2 - PADDLE_SIZE}) {}
+
+
+Paddle::~Paddle() {}
+
+
+void Paddle::move(int dir) {
+	switch(dir) {
+		case NORTH_DIR:
+			mCord.y--;
+		break;
+		
+		case SOUTH_DIR:
+			mCord.y++;
+		break;
+	}
+}
