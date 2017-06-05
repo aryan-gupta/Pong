@@ -1,0 +1,46 @@
+/**    
+***    Copyright (c) 2017 The Gupta Empire - All Rights Reserved
+***    Unauthorized copying of this file, via any medium is strictly prohibited
+***    Proprietary and confidential
+***    
+***    Written by Aryan Gupta <me@theguptaempire.net>
+***    
+***=============================================================================
+***    Please see other files for detailed information. This file is a stagnant
+***    file and will not change. Values contained in this file will be replaced
+***    during compile time with the proper values.   
+***=============================================================================
+**/
+ 
+#include "info.h"
+
+MAIN ICON R_MAINICON
+
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "080904E4"
+		BEGIN
+			VALUE "ProductName", 		R_PROJNAME
+			VALUE "InternalName",		R_PRGMNAME
+			VALUE "ProductVersion",		R_PVERSION
+			VALUE "CompanyName",		R_COMPANY
+			VALUE "FileDescription",	R_DESCRIPTION
+			VALUE "LegalCopyright",		R_COPYRIGHT
+			VALUE "OriginalFilename",	R_ORGFILENAME
+			VALUE "FileVersion",		R_FVERSION
+			VALUE "Comments",			R_COMMENTS
+			VALUE "LegalTrademarks",	R_LEGALTRDMKS
+			VALUE "PrivateBuild",		R_PRIVATEBUILD
+			VALUE "SpecialBuild",		R_SPECIALBUILD
+		END
+	END
+
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x809, 1252
+	END
+END
