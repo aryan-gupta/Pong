@@ -17,4 +17,11 @@
 #include "info.h"
 
 #include "main.h"
+#include "Human.h"
 
+Human::Human()
+: Paddle(MAP_W) {}
+
+
+
+Human::~Human() {}

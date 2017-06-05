@@ -17,3 +17,13 @@
 
 #pragma once
 
+class Human : public Paddle {
+public:
+	Human();
+	~Human();
+	
+protected:
+
+private:
+
+};
