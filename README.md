@@ -4,8 +4,10 @@
 
 
 
-#  #
-
+# Pong #
+This is a simple game of Pong. Uses group of pixels as a "virtual" pixel in the
+game. Use the W/S key to move up and down if you are playing as Player 1, and 
+the Up/Down Arrow key if you are playing as Player 2. 
 
 
 
