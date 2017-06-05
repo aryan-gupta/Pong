@@ -8,10 +8,10 @@
 ***=============================================================================
 ***    @author          Aryan Gupta
 ***    @project         
-***    @title           main
+***    @title           Paddle
 ***    @date            (YYYY-MM-DD)
 ***    @version         
-***    @brief           Contains program entry point and misc. functions
+***    @brief           Contains code for the Paddle Base Class
 ***=============================================================================
 **/
 
@@ -24,7 +24,7 @@ public:
 	Paddle();
 	~Paddle();
 	
-	move(int dir);
+	void move(int dir);
 	
 protected:
 	Coordinate mCord;
