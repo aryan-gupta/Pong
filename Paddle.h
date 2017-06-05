@@ -16,3 +16,15 @@
 **/
 
 #pragma once
+
+class Paddle {
+public:
+	Paddle();
+	~Paddle();
+	
+	move(int dir);
+	
+private:
+	Coordinate mCord;
+
+};
