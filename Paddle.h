@@ -17,6 +17,8 @@
 
 #pragma once
 
+static const int PADDLE_SIZE = MAP_H / 4;
+
 class Paddle {
 public:
 	Paddle();
@@ -24,7 +26,9 @@ public:
 	
 	move(int dir);
 	
-private:
+protected:
 	Coordinate mCord;
+	
+private:
 
 };
