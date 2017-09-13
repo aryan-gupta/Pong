@@ -20,8 +20,22 @@
 #include "Human.h"
 
 Human::Human()
-: Paddle(MAP_W) {}
+: Paddle(MAP_W) { }
 
 
+Human::~Human() { }
 
-Human::~Human() {}
+Human::processEveent(const SDL_Event& e) {
+	switch (e.type) {
+		case SDL_QUIT: {
+			gGame::quit(0x01);
+		}
+		
+		const Uint8* keystate = SDL_GetKeyboardState(NULL); // Get KeyBoard State
+		if(keystate[SDL_SCANCODE_W]) // If player is holding down the A Key
+			move(NORTH_DIR);
+		if(keystate[SDL_SCANCODE_S]) // If player is holding down the D Key
+			move(SOUTH_DIR);
+	}
+}
+

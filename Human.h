@@ -22,8 +22,10 @@ public:
 	Human();
 	~Human();
 	
+	processEvent(const SDL_Event& e);
+	paint();
 protected:
 
 private:
-
+	
 };
